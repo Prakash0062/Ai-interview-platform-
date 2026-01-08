@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Interview - Technical Interview Platform</title>
+    <meta name="description" content="Conduct technical interviews with audio, video, real-time chat, and live code editor. Perfect for software developers preparing for interviews.">
+    <meta name="keywords" content="technical interview, coding interview, video interview, code editor, interview platform">
+    
+    <meta property="og:title" content="Interview - Technical Interview Platform">
+    <meta property="og:description" content="Conduct technical interviews with audio, video, real-time chat, and live code editor.">
+    
+    <meta name="twitter:title" content="Interview - Technical Interview Platform">
+    <meta name="twitter:description" content="Conduct technical interviews with audio, video, real-time chat, and live code editor.">
+
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react@18/umd/react.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://resource.trickle.so/vendor_lib/unpkg/lucide-static@0.516.0/font/lucide.css" rel="stylesheet">
+
+    <style type="text/tailwindcss">
+    @layer theme {
+        :root {
+            --primary-color: #6366f1;
+            --secondary-color: #f0f4ff;
+            --accent-color: #4f46e5;
+            --text-primary: #1e293b;
+            --text-secondary: #64748b;
+            --border-color: #e2e8f0;
+        }
+    }
+
+    @layer base {
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            color: var(--text-primary);
+        }
+    }
+
+    @layer components {
+        .btn-primary {
+            @apply px-6 py-3 rounded-lg bg-[var(--primary-color)] text-white font-medium hover:bg-[var(--accent-color)] transition-all duration-200;
+        }
+        
+        .btn-secondary {
+            @apply px-6 py-3 rounded-lg border-2 border-[var(--primary-color)] text-[var(--primary-color)] font-medium hover:bg-[var(--secondary-color)] transition-all duration-200;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel" src="components/Header.js"></script>
+    <script type="text/babel" src="components/Hero.js"></script>
+    <script type="text/babel" src="components/Features.js"></script>
+    <script type="text/babel" src="components/HowItWorks.js"></script>
+    <script type="text/babel" src="components/Footer.js"></script>
+    <script type="text/babel" src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,4 @@
+- [ ] Add an array of sample MCQ questions with options and correct answers to the AIInterviewer object in utils/aiInterviewer.js
+- [ ] Modify the getMockResponse function to include MCQ question responses in the fallback case
+- [ ] Add a new method evaluateMCQ to handle evaluation of MCQ answers, providing feedback and the next question
+- [ ] Update the interview flow logic to use evaluateMCQ when the next question type is 'mcq'
